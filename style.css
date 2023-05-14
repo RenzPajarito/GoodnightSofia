@@ -103,6 +103,7 @@ section {
 	align-items: center;
 	background: url(images/background.png) no-repeat center;
 	background-size: cover;
+	overflow: hidden;
 }
 
 .hero:after {
@@ -168,7 +169,7 @@ section {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	background: linear-gradient(30deg, rgba(0,0,0,1) 0%, rgba(56,66,76,1) 35%, rgba(182,126,214,1) 100%);
+	background: linear-gradient(30deg, rgba(56,66,76,1) 40%, rgba(182,126,214,1) 100%);
 	padding: 4em 0 5em 0;
 }
 
@@ -219,6 +220,37 @@ section {
 	width: 280px;
 	height: auto;
 	border-radius: .5em;
+	transition: 0.3s;
+}
+
+.gallery img:hover {
+	transform: scale(1.05);
+	filter: invert(1);
+}
+
+.gallery img.gna-last {
+	height: 158px;
+	object-fit: cover;
+}
+
+footer {
+	width: 100%;
+	height: 4.5em;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background: #272727;
+}
+
+footer p,a {
+	font-size: 1.1em;
+	color: #f1f1f1;
+	text-transform: capitalize;
+	transition: 0.3s;
+}
+
+footer a:hover {
+	color: mediumspringgreen;
 }
 
 @media (max-width: 720px) {
@@ -276,5 +308,12 @@ section {
 	}
 	.gallery-section .gallery {
 		grid-template-columns: repeat(1, 1fr);
+	}
+	footer {
+		flex-direction: column;
+		padding: 1em 0 1em 0;
+	}
+	footer p,a {
+		font-size: 1em;
 	}
 }
