@@ -150,6 +150,8 @@ section {
 	text-transform: uppercase;
 	border-radius: 0.26em;
 	margin-left: .2em;
+	user-select: none;
+	cursor: pointer;
 }
 
 .hero .hero-profile {
