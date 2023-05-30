@@ -360,7 +360,7 @@ footer a:hover {
 		grid-template-columns: repeat(1, 1fr);
 	}
 	.video-box {
-		margin-top: 3em;
+		margin-top: 2em;
 	}
 	.video-box video {
 		width: 20em;
@@ -368,10 +368,10 @@ footer a:hover {
 	.lyrics {
 		position: relative;
 		top: -5em;
-		font-size: .9em;
+		font-size: .8em;
 	}
 	.sv-title {
 		font-size: 1.2em;
-		bottom: 3.5em;
+		bottom: 2em;
 	}
 }
