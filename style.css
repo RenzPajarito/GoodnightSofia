@@ -255,6 +255,44 @@ footer a:hover {
 	color: mediumspringgreen;
 }
 
+.special-video {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	background: linear-gradient(-30deg, rgba(56,66,76,1) 40%, rgba(182,126,214,1) 100%);
+	justify-content: center;
+	align-items: center;
+	grid-gap: 5em;
+	padding-bottom: 5em;
+}
+
+.sv-title {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	bottom: 2.5em;
+	font-size: 1.8em;
+	color: #f1f1f1;
+	letter-spacing: .06em;
+}
+
+.video-box video {
+	width: 40em;
+	height: auto;
+}
+
+.lyrics {
+	background: rgba(0, 0, 0, .3);
+	padding: 2em;
+	border-radius: .5em;
+	backdrop-filter: blur(3em);
+}
+
+.lyrics p {
+	font-size: 1.4em;
+	font-family: sans-serif;
+	color: #f1f1f1;
+}
+
 @media (max-width: 720px) {
 	.hero {
 		grid-template-columns: repeat(1, 1fr);
@@ -317,5 +355,23 @@ footer a:hover {
 	}
 	footer p,a {
 		font-size: 1em;
+	}
+	.special-video {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.video-box {
+		margin-top: 3em;
+	}
+	.video-box video {
+		width: 20em;
+	}
+	.lyrics {
+		position: relative;
+		top: -5em;
+		font-size: .9em;
+	}
+	.sv-title {
+		font-size: 1.2em;
+		bottom: 3.5em;
 	}
 }
